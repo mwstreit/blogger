@@ -9,8 +9,6 @@ class TagsController < ApplicationController
     @tag = Tag.all
   end
 
-
-
   def destroy
     @tag = Tag.find(params[:id])
     @tag.destroy
